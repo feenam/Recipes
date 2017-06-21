@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:id="@+id/activity_add_steps"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.christian.recipes.MainActivity">
+
+    <TextView
+        android:layout_marginRight="14dp"
+        android:textSize="18dp"
+        android:textColor="@color/activeText"
+        android:layout_gravity="bottom|end"
+        android:text="Continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/continue_button" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="onContinue"
+        android:id="@+id/name_page_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_content_size"
+        app:backgroundTint="@color/myGreen"
+        android:scaleType="fitXY"
+        android:scaleX="-1"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/activeText"
+        android:layout_gravity="bottom|start"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:onClick="OnFinish"
+        android:id="@+id/name_page_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_content_size"
+        app:backgroundTint="@color/myRed"
+        android:scaleType="fitXY"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/shadow_124714"
+        android:layout_height="100dp"
+        android:id="@+id/name_page_header"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:onClick="onSendHome"
+
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
+            android:id="@+id/go_back" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center|top"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo"
+                android:backgroundTint="@android:color/transparent" />
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:text="Enter cooking instructions for DishName (one per line)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps_title"
+                android:fontFamily="sans-serif"
+                android:textSize="32sp"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:paddingTop="50dp"
+            android:cursorVisible="true"
+            android:imeOptions="flagNoEnterAction"
+            android:inputType="textMultiLine"
+            android:id="@+id/addStepsEditText"
+            android:backgroundTint="@color/myRed"
+            android:hint="list instructions"
+            android:textCursorDrawable="@drawable/red_cursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/write_in"
+            />
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

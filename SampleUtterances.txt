@@ -1,0 +1,53 @@
+FindIntent find {food}
+FindIntent i'd like to make {food}
+FindIntent i'd like to find {food}
+FindIntent search for {food}
+FindIntent how do i make {food}
+FindIntent how do i cook {food}
+WhatCanISayIntent what can i say
+WhatCanISayIntent options
+WhatCanISayIntent what options are there
+WhatCanISayIntent choices
+WhatCanISayIntent i don't know what to say
+WhatCanISayIntent give me options
+WhatCanISayIntent give me choices
+AMAZON.StopIntent exit
+AMAZON.StopIntent quit
+AMAZON.StopIntent quit recipes
+AMAZON.StopIntent stop recipes
+AMAZON.StopIntent quit ingredients
+AMAZON.StopIntent stop ingredients
+IngredientsIntent ingredients
+IngredientsIntent what are the ingredients
+IngredientsIntent what ingredients are there
+IngredientsIntent what ingredients do i need
+AMAZON.NextIntent next ingredient
+AMAZON.NextIntent what's the next ingredient
+AMAZON.NextIntent next ingredient
+AMAZON.NextIntent what's next
+AMAZON.NextIntent next
+AMAZON.NextIntent next step
+AMAZON.NextIntent what's the next step
+AMAZON.PreviousIntent last ingredient
+AMAZON.PreviousIntent what was the last ingredient
+AMAZON.PreviousIntent what was the previous ingredient
+AMAZON.PreviousIntent previous
+AMAZON.PreviousIntent go back
+AMAZON.PreviousIntent back one
+AMAZON.PreviousIntent back
+AMAZON.PreviousIntent last step
+AMAZON.PreviousIntent what was the last step
+AMAZON.PreviousIntent what was the previous step
+MainMenuIntent main menu
+MainMenuIntent go to the main menu
+MainMenuIntent go back to the top
+MainMenuIntent go back to the main menu
+StartRecipeIntent start recipe
+StartRecipeIntent start
+StartRecipeIntent read recipe
+StartRecipeIntent start reading the recipe
+StartRecipeIntent start the recipe
+StartRecipeIntent begin
+StartRecipeIntent begin recipe
+StartRecipeIntent start directions
+StartRecipeIntent where do i start

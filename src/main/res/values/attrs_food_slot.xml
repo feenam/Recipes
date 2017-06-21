@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="foodSlot">
+        <attr name="picture" format="reference" />
+        <attr name="dish_name" format="string" />
+    </declare-styleable>
+</resources>

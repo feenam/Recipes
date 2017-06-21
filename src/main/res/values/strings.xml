@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_button">SB</string>
+    <string name="app_title">OpaRecipes</string>
+    <string name="hint">search recipe</string>
+    <string name="add_name_hint">name of dish</string>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:id="@+id/activity_view_steps"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.christian.recipes.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@drawable/shadow_124714"
+        android:layout_height="100dp"
+        android:id="@+id/name_page_header"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent">
+
+        <ImageButton
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:onClick="onSendHome"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
+            android:id="@+id/go_back" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center|top"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/logo"
+                android:backgroundTint="@android:color/transparent" />
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="20dp"
+                android:text="Cooking instructions for DishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/steps_title"
+                android:fontFamily="sans-serif"
+                android:textSize="32sp"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_134110"
+        android:layout_width="260dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/steps_dish_image"
+            android:layout_width="190dp"
+            android:layout_height="120dp" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:background="@color/background"
+            android:layout_gravity="center"
+            android:layout_width="297dp"
+            android:layout_height="3dp">
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ingredients_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients"
+            android:textColor="@color/activeText"
+            android:textSize="26sp"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingBottom="20dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/steps_ingredients_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/activeText"
+                android:textSize="20sp"
+                android:lineSpacingExtra="14sp" />
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="290dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_134110"
+        android:layout_width="710dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/steps_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps"
+            android:textColor="@color/activeText"
+            android:textSize="26sp"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:layout_marginTop="11dp"
+                android:paddingBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/steps_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/activeText"
+                android:textSize="24sp"
+                android:lineSpacingExtra="24sp" />
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

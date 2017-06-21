@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "FindIntent",
+      "slots": [
+        {
+          "name": "food",
+          "type": "AMAZON.Food"
+        }
+      ]
+    },
+    {
+      "intent": "WhatCanISayIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "IngredientsIntent"
+    },
+    {
+      "intent": "AMAZON.NextIntent"
+    },
+    {
+      "intent": "AMAZON.PreviousIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "MainMenuIntent"
+    },
+    {
+      "intent": "StartRecipeIntent"
+    }
+  ]
+}
