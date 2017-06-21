@@ -1,1 +1,2 @@
 # Recipes
+Recipes can be used to create new recipes or look up a recipe that has been uploaded before. Android UI is used to show name, picture, ingredients, and cooking steps visually. You can also access Recipes with voice through Amazon Alexa. GUI and VUI shares the same database to reflect the changes made from one another.
